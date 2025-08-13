@@ -43,5 +43,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharpEgitim301.DataAccsessLayer\CSharpEgitim301.DataAccsessLayer.csproj">
+      <Project>{5bce1f83-9cfa-4365-a9f4-c9a722110fa3}</Project>
+      <Name>CSharpEgitim301.DataAccsessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

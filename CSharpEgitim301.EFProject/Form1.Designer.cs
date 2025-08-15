@@ -93,6 +93,7 @@
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(140, 22);
             this.txtSurname.TabIndex = 19;
+            this.txtSurname.TextChanged += new System.EventHandler(this.txtSurname_TextChanged);
             // 
             // label3
             // 
@@ -102,6 +103,7 @@
             this.label3.Size = new System.Drawing.Size(101, 16);
             this.label3.TabIndex = 18;
             this.label3.Text = "Rehber Soyad: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtName
             // 
@@ -109,6 +111,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(140, 22);
             this.txtName.TabIndex = 17;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // label2
             // 
@@ -118,6 +121,7 @@
             this.label2.Size = new System.Drawing.Size(78, 16);
             this.label2.TabIndex = 16;
             this.label2.Text = "Rehber Ad: ";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // dataGridView1
             // 
@@ -128,6 +132,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(593, 355);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnList
             // 
@@ -146,6 +151,7 @@
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(140, 22);
             this.txtId.TabIndex = 13;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // label1
             // 
@@ -155,6 +161,7 @@
             this.label1.Size = new System.Drawing.Size(72, 16);
             this.label1.TabIndex = 12;
             this.label1.Text = "Rehber İd: ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 

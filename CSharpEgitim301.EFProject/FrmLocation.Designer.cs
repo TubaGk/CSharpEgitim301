@@ -32,24 +32,24 @@
             this.btnGetByID = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtCountry = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnList = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDayNight = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.npdCapacity = new System.Windows.Forms.NumericUpDown();
+            this.cmbGuide = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCapacity)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -61,6 +61,7 @@
             this.btnUpdate.TabIndex = 35;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnGetByID
             // 
@@ -81,6 +82,7 @@
             this.btnDelete.TabIndex = 33;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -91,13 +93,14 @@
             this.btnAdd.TabIndex = 32;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // txtSurname
+            // txtCountry
             // 
-            this.txtSurname.Location = new System.Drawing.Point(144, 120);
-            this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(140, 22);
-            this.txtSurname.TabIndex = 31;
+            this.txtCountry.Location = new System.Drawing.Point(144, 120);
+            this.txtCountry.Name = "txtCountry";
+            this.txtCountry.Size = new System.Drawing.Size(140, 22);
+            this.txtCountry.TabIndex = 31;
             // 
             // label3
             // 
@@ -108,12 +111,12 @@
             this.label3.TabIndex = 30;
             this.label3.Text = "Ülke: ";
             // 
-            // txtName
+            // txtCity
             // 
-            this.txtName.Location = new System.Drawing.Point(144, 92);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(140, 22);
-            this.txtName.TabIndex = 29;
+            this.txtCity.Location = new System.Drawing.Point(144, 92);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(140, 22);
+            this.txtCity.TabIndex = 29;
             // 
             // label2
             // 
@@ -170,12 +173,12 @@
             this.label4.TabIndex = 36;
             this.label4.Text = "Kapasite: ";
             // 
-            // textBox2
+            // txtDayNight
             // 
-            this.textBox2.Location = new System.Drawing.Point(144, 204);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(140, 22);
-            this.textBox2.TabIndex = 41;
+            this.txtDayNight.Location = new System.Drawing.Point(144, 204);
+            this.txtDayNight.Name = "txtDayNight";
+            this.txtDayNight.Size = new System.Drawing.Size(140, 22);
+            this.txtDayNight.TabIndex = 41;
             // 
             // label5
             // 
@@ -186,12 +189,12 @@
             this.label5.TabIndex = 40;
             this.label5.Text = "Gün-Gece: ";
             // 
-            // textBox3
+            // txtPrice
             // 
-            this.textBox3.Location = new System.Drawing.Point(144, 176);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(140, 22);
-            this.textBox3.TabIndex = 39;
+            this.txtPrice.Location = new System.Drawing.Point(144, 176);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(140, 22);
+            this.txtPrice.TabIndex = 39;
             // 
             // label6
             // 
@@ -211,41 +214,41 @@
             this.label7.TabIndex = 42;
             this.label7.Text = "Rehber: ";
             // 
-            // numericUpDown1
+            // npdCapacity
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(144, 148);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(140, 22);
-            this.numericUpDown1.TabIndex = 44;
+            this.npdCapacity.Location = new System.Drawing.Point(144, 148);
+            this.npdCapacity.Name = "npdCapacity";
+            this.npdCapacity.Size = new System.Drawing.Size(140, 22);
+            this.npdCapacity.TabIndex = 44;
             // 
-            // comboBox1
+            // cmbGuide
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 232);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(139, 24);
-            this.comboBox1.TabIndex = 45;
+            this.cmbGuide.FormattingEnabled = true;
+            this.cmbGuide.Location = new System.Drawing.Point(145, 232);
+            this.cmbGuide.Name = "cmbGuide";
+            this.cmbGuide.Size = new System.Drawing.Size(139, 24);
+            this.cmbGuide.TabIndex = 45;
             // 
             // FrmLocation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 547);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.cmbGuide);
+            this.Controls.Add(this.npdCapacity);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtDayNight);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnGetByID);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtSurname);
+            this.Controls.Add(this.txtCountry);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnList);
@@ -255,7 +258,7 @@
             this.Text = "FrmLocation";
             this.Load += new System.EventHandler(this.FrmLocation_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCapacity)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,21 +270,21 @@
         private System.Windows.Forms.Button btnGetByID;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.TextBox txtCountry;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDayNight;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.NumericUpDown npdCapacity;
+        private System.Windows.Forms.ComboBox cmbGuide;
     }
 }

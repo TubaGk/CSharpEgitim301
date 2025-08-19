@@ -43,7 +43,7 @@ Bu proje, **C# Windows Forms** ile geliştirilmiş bir seyahat istatistikleri uy
 ## 🖥️ Uygulama Ekranı
 Aşağıda uygulamanın ekran görüntüsü yer almaktadır:  
 
-![FrmStatistics Ekran Görüntüsü](images/frmStatistics.jpg)
+![FrmStatistics Ekran Görüntüsü](https://github.com/kullaniciadi/repoadi/blob/main/CSharpEgitim301.EFProject/images/frmStatistics.jpg?raw=true)
 
 
 ## ⚙️ Kullanılan Teknolojiler

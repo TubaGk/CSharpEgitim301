@@ -10,7 +10,7 @@ namespace CSharpEgitim301.DataAccsessLayer.Abstract
     {
         void Insert (T entity);
         void Update (T entity);
-        void Delete (int id);
+        void Delete (T entity);
         List<T> GetAll (int id);
         T GetById (int id);
     }

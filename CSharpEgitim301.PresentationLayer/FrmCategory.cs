@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace CSharpEgitim301.PresentationLayer
 {
-    public partial class Form1 : Form
+    public partial class FrmCategory : Form
     {
-        public Form1()
+        public FrmCategory()
         {
             InitializeComponent();
         }
 
         private void btnList_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

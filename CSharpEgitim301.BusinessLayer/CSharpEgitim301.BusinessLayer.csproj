@@ -41,12 +41,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICategoryService.cs" />
+    <Compile Include="Abstract\ICustomerService.cs" />
+    <Compile Include="Abstract\IGenericService.cs" />
+    <Compile Include="Abstract\IOrderService.cs" />
+    <Compile Include="Abstract\IProductService.cs" />
+    <Compile Include="Concrete\CategoryManager.cs" />
+    <Compile Include="Concrete\CustomerManager.cs" />
+    <Compile Include="Concrete\OrderManager.cs" />
+    <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharpEgitim301.DataAccsessLayer\CSharpEgitim301.DataAccsessLayer.csproj">
       <Project>{5bce1f83-9cfa-4365-a9f4-c9a722110fa3}</Project>
       <Name>CSharpEgitim301.DataAccsessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpEgitim301.EFProject\CSharpEgitim301.EFProject.csproj">
+      <Project>{ADBE7981-ED9A-4C36-9DF5-1BBDC3825650}</Project>
+      <Name>CSharpEgitim301.EFProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharpEgitim301.EntityLayer\CSharpEgitim301.EntityLayer.csproj">
+      <Project>{91D5727C-592B-4F49-A83D-DBBCCE44093D}</Project>
+      <Name>CSharpEgitim301.EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
